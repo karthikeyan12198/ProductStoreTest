@@ -25,7 +25,7 @@ public class DeleteCartPage {
 			try {
 				if(browser.equalsIgnoreCase("chrome"))
 				{
-					System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver");
+					System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver.exe");
 					driver = new ChromeDriver();
 				}
 				else if(browser.equalsIgnoreCase("firefox"))
