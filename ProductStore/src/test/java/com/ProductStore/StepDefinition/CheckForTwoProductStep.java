@@ -29,6 +29,8 @@ public class CheckForTwoProductStep {
 		    // Write code here that turns the phrase above into concrete actions
 			two_product.clickOne();
 			two_product.clickAgain();
+			Thread.sleep(3000);
+			two_product.screenshot("/Users/Karthi/git/ProductStoreTest/ProductStore/src/test/resources/Screenshot/twoproduct.jpg");
 		   String productOne = two_product.firstProduct();
 		   String productTwo=two_product.secondProduct();
 		   System.out.println(productOne);
@@ -38,6 +40,7 @@ public class CheckForTwoProductStep {
 			   
 			   Assert.assertTrue(true);
 			   System.out.println("Scenario passed");
+			   Thread.sleep(3000);
 			   
 		   }
 

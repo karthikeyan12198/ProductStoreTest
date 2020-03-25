@@ -29,6 +29,7 @@ public class DescriptionStep {
 		public void user_gets_the_description_of_the_specific_product() throws Throwable {
 		    // Write code here that turns the phrase above into concrete actions
 			description.getDescription();
+			description.screenshotone("/Users/Karthi/git/ProductStoreTest/ProductStore/src/test/resources/Screenshot/description.jpg");
 			description.exitBrowser();;
 		}
 }

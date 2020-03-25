@@ -1,9 +1,14 @@
 package com.ProductStore.pagesobjects;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +27,7 @@ public class CheckForTwoProductPage {
 		try {
 			if(browser.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver");
 				driver = new ChromeDriver();
 			}
 			else if(browser.equalsIgnoreCase("firefox"))
@@ -86,6 +91,13 @@ public class CheckForTwoProductPage {
 		String c=driver.findElement(By.xpath("//*[@id=\"tbodyid\"]/tr[2]/td[2]")).getText();
 		return c;
 	}
+	
+	
+	public void screenshot(String path) throws IOException {
+		TakesScreenshot take=((TakesScreenshot)driver);
+		File source=take.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source,new File(path));
+	}	
 //To close the browser
 	public void closeBrowser() {
 		driver.close();

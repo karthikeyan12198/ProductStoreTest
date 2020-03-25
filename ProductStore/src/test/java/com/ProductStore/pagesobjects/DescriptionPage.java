@@ -1,8 +1,13 @@
 package com.ProductStore.pagesobjects;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +21,7 @@ public class DescriptionPage {
 		try {
 			if(browser.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver");
 				driver = new ChromeDriver();
 			}
 			else if(browser.equalsIgnoreCase("firefox"))
@@ -52,7 +57,15 @@ public class DescriptionPage {
 	    String s2=driver.findElement(By.xpath("//*[@id=\"more-information\"]/p")).getText();
 	    System.out.println(s);
 	    System.out.println(s2);
+	    Thread.sleep(3000);
 	}
+	
+	public void screenshotone(String path) throws IOException {
+		TakesScreenshot takes=((TakesScreenshot)driver);
+		File source=takes.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source, new File(path));
+	}	
+	
 //To close the browser
 	public void exitBrowser() {
 		driver.close();
