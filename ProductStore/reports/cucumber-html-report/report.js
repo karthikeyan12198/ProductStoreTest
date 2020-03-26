@@ -44,28 +44,28 @@ formatter.match({
   "location": "DeleteCartStep.the_user_launch_the_chrome_application()"
 });
 formatter.result({
-  "duration": 13767406941,
+  "duration": 8002775931,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteCartStep.user_opens_Product_store_homepages()"
 });
 formatter.result({
-  "duration": 3937428398,
+  "duration": 2968009112,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteCartStep.user_clicks_cart()"
 });
 formatter.result({
-  "duration": 6628706792,
+  "duration": 19881949685,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteCartStep.delete_the_product_in_cart()"
 });
 formatter.result({
-  "duration": 6700031193,
+  "duration": 4385793653,
   "status": "passed"
 });
 formatter.scenario({
@@ -106,28 +106,28 @@ formatter.match({
   "location": "SelectLaptopStep.user_launch_the_chrome_application()"
 });
 formatter.result({
-  "duration": 2867154715,
+  "duration": 3907684193,
   "status": "passed"
 });
 formatter.match({
   "location": "SelectLaptopStep.user_opens_Product_store_homepage()"
 });
 formatter.result({
-  "duration": 3447189957,
+  "duration": 2277169770,
   "status": "passed"
 });
 formatter.match({
   "location": "SelectLaptopStep.user_clicks_laptop_tab()"
 });
 formatter.result({
-  "duration": 4596064229,
+  "duration": 19350374740,
   "status": "passed"
 });
 formatter.match({
   "location": "SelectLaptopStep.user_selects_a_laptop_and_gets_price_of_specific_laptop()"
 });
 formatter.result({
-  "duration": 3132722712,
+  "duration": 3185669956,
   "status": "passed"
 });
 formatter.scenario({
@@ -163,22 +163,23 @@ formatter.match({
   "location": "CheckForPhoneNumberStep.user_launch_chrome_application()"
 });
 formatter.result({
-  "duration": 2721063066,
+  "duration": 3629717788,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckForPhoneNumberStep.user_opens_product_Store_homepage()"
 });
 formatter.result({
-  "duration": 4145730399,
+  "duration": 2740652207,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckForPhoneNumberStep.user_checks_if_the_number_is_valid()"
 });
 formatter.result({
-  "duration": 3165412943,
-  "status": "passed"
+  "duration": 41589286,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c440 12[2]3456\u003e but was:\u003c440 12[]3456\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.ProductStore.StepDefinition.CheckForPhoneNumberStep.user_checks_if_the_number_is_valid(CheckForPhoneNumberStep.java:33)\n\tat ✽.Then User checks if the number is valid(src/main/resources/features/Productstore.feature:21)\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 24,
@@ -213,21 +214,21 @@ formatter.match({
   "location": "DescriptionStep.user_launch_chrome_application()"
 });
 formatter.result({
-  "duration": 2576922068,
+  "duration": 3596086071,
   "status": "passed"
 });
 formatter.match({
   "location": "DescriptionStep.the_User_opens_product_Store_homepage()"
 });
 formatter.result({
-  "duration": 5351647183,
+  "duration": 23224982316,
   "status": "passed"
 });
 formatter.match({
   "location": "DescriptionStep.user_gets_the_description_of_the_specific_product()"
 });
 formatter.result({
-  "duration": 24979303562,
+  "duration": 23024211183,
   "status": "passed"
 });
 formatter.scenario({
@@ -263,21 +264,21 @@ formatter.match({
   "location": "CheckForTwoProductStep.launch_the_chrome_application()"
 });
 formatter.result({
-  "duration": 5602216541,
+  "duration": 7183371901,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckForTwoProductStep.the_User_open_product_Store_homepage()"
 });
 formatter.result({
-  "duration": 3449955168,
+  "duration": 59394611289,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckForTwoProductStep.user_need_to_check_whether_the_added_product_is_available_in_cart()"
 });
 formatter.result({
-  "duration": 35963468598,
+  "duration": 35745587491,
   "status": "passed"
 });
 });

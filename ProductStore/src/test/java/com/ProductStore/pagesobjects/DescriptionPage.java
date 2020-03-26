@@ -21,7 +21,7 @@ public class DescriptionPage {
 		try {
 			if(browser.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver");
 				driver = new ChromeDriver();
 			}
 			else if(browser.equalsIgnoreCase("firefox"))
