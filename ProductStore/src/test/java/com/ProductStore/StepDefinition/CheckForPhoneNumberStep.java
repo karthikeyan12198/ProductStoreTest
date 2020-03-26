@@ -29,7 +29,7 @@ public class CheckForPhoneNumberStep {
 		public void user_checks_if_the_number_is_valid() throws Throwable {
 		    // Write code here that turns the phrase above into concrete actions
 			String ab=phonenumber.check();
-			String phone_number="440 1223456";
+			String phone_number="440 123456";
 			Assert.assertEquals(phone_number,ab);
 			System.out.println("Valid");
 			Thread.sleep(3000);
